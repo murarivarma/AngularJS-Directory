@@ -1,0 +1,34 @@
+{
+  "name": "AngularJS Directory",
+  "homepage": "index.html",
+  "authors": [
+    "murarivarma <murarivarma@hotmail.com>"
+  ],
+  "description": "All topics of AngularJS.",
+  "main": "index.html",
+  "keywords": [
+    "AngularJS",
+    "HTML",
+    "CSS",
+    "Twitter",
+    "Bootstrap",
+    "JQuery",
+    "JavaScript."
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "font-awesome": "fontawesome#^4.7.0",
+    "bootstrap": "^3.3.7",
+    "underscore": "^1.8.3",
+    "angular": "^1.5.8"
+  }
+}
