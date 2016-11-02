@@ -7,6 +7,9 @@
                 name: "Home",
                 templateURL: "app/home/home.html"
             },{
+                name: "Products",
+                templateURL: "app/products/products.html"
+            },{
                 name: "Login",
                 templateURL: "app/login/login.html"
             },{

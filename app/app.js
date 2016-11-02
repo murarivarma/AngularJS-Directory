@@ -1,3 +1,3 @@
 (function() {
-    angular.module("AngularJS Directory", ["headerNavBar", "register", "lookup"]);
+    angular.module("AngularJS Directory", ["headerNavBar", "register", "lookup", "products"]);
 })();

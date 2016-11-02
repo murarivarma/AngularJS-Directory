@@ -1,0 +1,21 @@
+
+<div class="container" ng-controller="productsCtrl">
+    <div class="row">
+        <div class="col-sm-8 col-md-9">
+            <ul class="thumbnail-list">
+                <li ng-repeat="product in productsList"> <a href="#" class=""><img ng-srcset= "{{ product.productImageURL }}" class=""></a>
+
+                    <h4 class="">{{ product.productName }}</h4>
+                        <div class="product-price"> 
+                            <span class="cut-price">{{ product.productPrice }}</span>
+                            <span class="normal-price">{{ product.productPrice }}</span>
+
+                        </div>
+                        <button type="button btn-primary" ng-if="!product.selected" ng-click="" class="btn btn-default navbar-btn">Add to Cart</button>
+                        <button type="button btn-warning" ng-if="product.selected" ng-click="" class="btn btn-default navbar-btn">Remove from Cart</button>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
