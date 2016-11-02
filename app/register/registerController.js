@@ -2,6 +2,7 @@
     
     function registerCtrlAction($scope) {
         $scope.user = {};
+        
         var states = [
             {
                 "name": "Telangana",
@@ -1011,6 +1012,10 @@
             
             return stateList;
         }
+        
+        $scope.register = function(){
+            console.log($scope.user);
+        };
     }
     
     angular.module("register").controller("registerCtrl", ["$scope", registerCtrlAction]);

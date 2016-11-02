@@ -1,5 +1,5 @@
 <!--<h1>Register Page.</h1>-->
-<form class="form-horizontal" action='' method="POST" ng-controller="registerCtrl">
+<form class="form-horizontal" ng-controller="registerCtrl">
   <fieldset>
     <div id="legend">
       <legend class="">Register</legend>
@@ -78,19 +78,17 @@
     </div>
  
     <div class="control-group">
-      <!-- Password -->
-      <label class="control-label"  for="password_confirm">Password (Confirm)</label>
+      <!-- Accept Terms -->
+      <label class="control-label"  for="accept terms">Accept terms to register</label>
       <div class="controls">
-        <input type="password" ng-model="user.passwordConfirm"
-               id="password_confirm" name="password_confirm" placeholder="" class="input-xlarge">
-        <p class="help-block">Please confirm password</p>
+        <input type="checkbox" ng-model="user.agree">I agree to Terms & Conditions.
       </div>
     </div>
  
-    <div class="control-group">
+    <div class="control-group" ng-if="user.agree">
       <!-- Button -->
       <div class="controls">
-        <button class="btn btn-success">Register</button>
+        <button class="btn btn-success" ng-click="register()">Register</button>
       </div>
     </div>
       
