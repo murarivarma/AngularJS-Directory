@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html ng-app="AngularJS Directory">
     <head>
-        <title>Learning Angular JS</title>
+        <title>AngularJS Directory</title>
         <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
         <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.css">
         <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
@@ -12,13 +12,18 @@
         <script src="bower_components/angular/angular.js"></script>
     </head>
     <body>
-        <div class="container" ng-controller="headerNavBarController">
+        <div ng-controller="headerNavBarController">
             <div ng-include="headerURL"></div>
         </div>
+        
         
         <!-- Header js file -->
         <script src="app/header/header.js"></script>
         <script src="app/header/headerController.js"></script>
+        
+        <!-- Register js file -->
+        <script src="app/register/register.js"></script>
+        <script src="app/register/registerController.js"></script>
         
         <!-- Main js file -->
         <script src="app/app.js"></script>

@@ -16,8 +16,7 @@
         
         $scope.loadPage = function(data) {
             $scope.contentURL = data.templateURL;
-            $scope.class = "active";
         }
     }
-    angular.module("headerNavBar", []).controller("headerNavBarController", ["$scope", headerCtrl]);
+    angular.module("headerNavBar").controller("headerNavBarController", ["$scope", headerCtrl]);
 })();
