@@ -1,22 +1,13 @@
 (function() {
-    function headerCtrl($scope) {
+    function headerCtrl($scope, lookupSvc) {
         $scope.brandName = "Angular Directory";
         $scope.headerURL = "app/header/header.html";
         
-        $scope.navBarItems = [{
-            name: "Home",
-            templateURL: "app/home/home.html"
-        },{
-            name: "Login",
-            templateURL: "app/login/login.html"
-        },{
-            name: "Register",
-            templateURL: "app/register/register.html"
-        }];
+        $scope.navBarItems = lookupSvc.getNavBarItems();
         
         $scope.loadPage = function(data) {
             $scope.contentURL = data.templateURL;
         }
     }
-    angular.module("headerNavBar").controller("headerNavBarController", ["$scope", headerCtrl]);
+    angular.module("headerNavBar").controller("headerNavBarController", ["$scope", "lookupSvc", headerCtrl]);
 })();
