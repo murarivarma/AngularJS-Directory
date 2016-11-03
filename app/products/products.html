@@ -11,8 +11,8 @@
                             <span class="normal-price">{{ product.productPrice }}</span>
 
                         </div>
-                        <button type="button btn-primary" ng-if="!product.selected" ng-click="" class="btn btn-default navbar-btn">Add to Cart</button>
-                        <button type="button btn-warning" ng-if="product.selected" ng-click="" class="btn btn-default navbar-btn">Remove from Cart</button>
+                        <button type="button btn-primary" ng-if="!product.selected" ng-click="addToCart(product)" class="btn btn-default navbar-btn">Add to Cart</button>
+                        <button type="button btn-warning" ng-if="product.selected" ng-click="removeFromCart(product)" class="btn btn-default navbar-btn">Remove from Cart</button>
                 </li>
                 
             </ul>
