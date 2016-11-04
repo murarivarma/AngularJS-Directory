@@ -10,6 +10,9 @@
                 name: "Products",
                 templateURL: "app/products/products.html"
             },{
+                name: "Vehicles",
+                templateURL: "app/vehicles/vehicles.html"
+            },{
                 name: "Login",
                 templateURL: "app/login/login.html"
             },{
