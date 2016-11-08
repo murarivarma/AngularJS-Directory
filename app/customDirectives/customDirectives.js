@@ -28,10 +28,35 @@
         };
     }
     
+    function customNumbersOnlyFunction(){
+        return {
+           
+            restrict:"A",
+            link: function(scope, element, attrs){
+                
+                element.bind("keypress", function(e){
+                   
+                    var allowedLength = attrs["customLength"];
+                    //console.log(allowedLength);
+                    
+                    if(e.charCode >= 48 && e.charCode <= 57 && this.value.length < allowedLength) {
+                        
+                    } else {
+                        e.preventDefault();
+                    }
+                    
+                });
+                
+            }
+            
+        };
+    }
+    
     
     angular.module("customDirective",[]);
     angular.module("customDirective",[])
         .directive("customLogo",[customLogoFunction])
         .directive("customHeader", [customHeaderFunction])
-        .directive("customClick", [customClickFunction]);
+        .directive("customClick", [customClickFunction])
+        .directive("customNumbersOnly", [customNumbersOnlyFunction]);
 })();
