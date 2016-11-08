@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
         <link rel="stylesheet" href="app/header/header.css">
         <link rel="stylesheet" href="app/products/products.css">
+        <link rel="stylesheet" href="app/cart/cart.css">
         <script src="bower_components/jquery/dist/jquery.js"></script>
         <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
         <script src="bower_components/underscore/underscore.js"></script>
@@ -14,7 +15,8 @@
     </head>
     <body>
         <div ng-controller="headerNavBarController">
-            <div ng-include="headerURL"></div>
+<!--            <div ng-include="headerURL"></div>-->
+            <div custom-header></div>
         </div>
         
         
@@ -30,19 +32,22 @@
         <script src="app/lookup/lookup.js"></script>
         <script src="app/lookup/lookupService.js"></script>
         
-        <!-- Lookup js file -->
+        <!-- Products js file -->
         <script src="app/products/products.js"></script>
         <script src="app/products/productsController.js"></script>
         <script src="app/products/productsService.js"></script>
         
-        <!-- Lookup js file -->
+        <!-- Vehicles data js file -->
         <script src="app/vehicles/vehicles.js"></script>
         <script src="app/vehicles/vehiclesCtrl.js"></script>
         <script src="app/vehicles/vehiclesSvc.js"></script>
         
-        <!-- Lookup js file -->
+        <!-- Custom Filter js file -->
         <script src="app/customFilters/customFilter.js"></script>
         <script src="app/customFilters/customFilterPhone.js"></script>
+        
+        <!-- Custom Directives js file -->
+        <script src="app/customDirectives/customDirectives.js"></script>
         
         <!-- Main js file -->
         <script src="app/app.js"></script>
